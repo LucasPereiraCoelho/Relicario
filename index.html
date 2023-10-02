@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,119 +12,365 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <img class = "logo" src="../Relicário/assets/images/a.png" alt="">
-        <a class="navbar-brand" href="#">Relicário</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Sul
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Paraná</a>
-                <a class="dropdown-item" href="#">Rio Grande do Sul</a>
-                <a class="dropdown-item" href="#">Santa Catarina</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Sudeste
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Espírito Santo</a>
-                <a class="dropdown-item" href="#">Minas Gerais</a>
-                <a class="dropdown-item" href="#">Rio de Janeiro</a>
-                <a class="dropdown-item" href="#">São Paulo</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Centro-Oeste
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Goiás</a>
-                <a class="dropdown-item" href="#">Mato Grosso</a>
-                <a class="dropdown-item" href="#">Mato Grosso Do Sul</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Norte
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Acre</a>
-                <a class="dropdown-item" href="#">Amapá</a>
-                <a class="dropdown-item" href="#">Amazonas</a>
-                <a class="dropdown-item" href="#">Pará</a>
-                <a class="dropdown-item" href="#">Rondonia</a>
-                <a class="dropdown-item" href="#">Roraima</a>
-                <a class="dropdown-item" href="#">Tocantins</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Nordeste
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Alagoas</a>
-                <a class="dropdown-item" href="#">Bahia</a>
-                <a class="dropdown-item" href="#">Ceará</a>
-                <a class="dropdown-item" href="#">Maranhão</a>
-                <a class="dropdown-item" href="#">Paraíba</a>
-                <a class="dropdown-item" href="#">Pernambuco</a>
-                <a class="dropdown-item" href="#">Piauí</a>
-                <a class="dropdown-item" href="#">Rio Grande do Norte</a>
-                <a class="dropdown-item" href="#">Sergipe</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Curiosidades
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Exemplo</a>
-                <a class="dropdown-item" href="#">Exemplo</a>
-                <a class="dropdown-item" href="#">Exemplo</a>
-                <a class="dropdown-item" href="#">Exemplo</a>
-                <a class="dropdown-item" href="#">Exemplo</a>
-                <a class="dropdown-item" href="#">Exemplo</a>
-                <a class="dropdown-item" href="#">Exemplo</a>
     
-            </li>
-          </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form>
-        </div>
-      </nav>
+        <header class="header">
+            <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <img class = "logo" src="assets/images/a.png" alt="">
+                <a class="navbar-brand" href="#">Relicário</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Sul
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#Parana">Paraná</a>
+                        <a class="dropdown-item" href="#Rio_Grande_do_Sul">Rio Grande do Sul</a>
+                        <a class="dropdown-item" href="#Santa Catarina">Santa Catarina</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Sudeste
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Espírito Santo</a>
+                        <a class="dropdown-item" href="#">Minas Gerais</a>
+                        <a class="dropdown-item" href="#">Rio de Janeiro</a>
+                        <a class="dropdown-item" href="#">São Paulo</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Centro-Oeste
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Goiás</a>
+                        <a class="dropdown-item" href="#">Mato Grosso</a>
+                        <a class="dropdown-item" href="#">Mato Grosso Do Sul</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Norte
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Acre</a>
+                        <a class="dropdown-item" href="#">Amapá</a>
+                        <a class="dropdown-item" href="#">Amazonas</a>
+                        <a class="dropdown-item" href="#">Pará</a>
+                        <a class="dropdown-item" href="#">Rondonia</a>
+                        <a class="dropdown-item" href="#">Roraima</a>
+                        <a class="dropdown-item" href="#">Tocantins</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Nordeste
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Alagoas</a>
+                        <a class="dropdown-item" href="#">Bahia</a>
+                        <a class="dropdown-item" href="#">Ceará</a>
+                        <a class="dropdown-item" href="#">Maranhão</a>
+                        <a class="dropdown-item" href="#">Paraíba</a>
+                        <a class="dropdown-item" href="#">Pernambuco</a>
+                        <a class="dropdown-item" href="#">Piauí</a>
+                        <a class="dropdown-item" href="#">Rio Grande do Norte</a>
+                        <a class="dropdown-item" href="#">Sergipe</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Curiosidades
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Exemplo</a>
+                        <a class="dropdown-item" href="#">Exemplo</a>
+                        <a class="dropdown-item" href="#">Exemplo</a>
+                        <a class="dropdown-item" href="#">Exemplo</a>
+                        <a class="dropdown-item" href="#">Exemplo</a>
+                        <a class="dropdown-item" href="#">Exemplo</a>
+                        <a class="dropdown-item" href="#">Exemplo</a>
+            
+                    </li>
+                  </ul>
+                  <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                  </form>
+                </div>
+              </nav>
 
-      <div class="container" id="inicio">
-        <div class="card">
-            <img class="gif greatsword" src="../Relicário/assets/images/c.png" alt="">
-            <h2 class="title">Figueirense</h2>
-            </a>
-            <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia autem commodi eius. Consequatur iste autem sed adipisci at maxime, consequuntur reiciendis fugit? Aut quibusdam, corporis neque in impedit enim autem!</p>
-        </div>
-        <div class="card">
-            <img class="gif long-sowrd" src="../Relicário/assets/images/c.png" alt="">
-            <h2 class="title">Figueirense</h2>
-            </a>
-            <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia autem commodi eius. Consequatur iste autem sed adipisci at maxime, consequuntur reiciendis fugit? Aut quibusdam, corporis neque in impedit enim autem!</p>
-        </div>
-        <div class="card">
-            <img class="gif" src="../Relicário/assets/images/c.png" alt="">
-            <h2 class="title">Figueirense</h2>
-            </a>
-            <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia autem commodi eius. Consequatur iste autem sed adipisci at maxime, consequuntur reiciendis fugit? Aut quibusdam, corporis neque in impedit enim autem!</p>
-        </div>
-        <div class="card">
-            <img class="gif" src="../Relicário/assets/images/c.png" alt="">
-            <h2 class="title">Figueirense</h2>
-            </a>
-            <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia autem commodi eius. Consequatur iste autem sed adipisci at maxime, consequuntur reiciendis fugit? Aut quibusdam, corporis neque in impedit enim autem!</p>
-        </div>
-    </div>
+        </header>
+
+        <aside>Aside</aside>
+
+        <main>
+
+            <section  id="ofertas" class="ofertas_da_semana">
+                <h1>Ofertas da Semana</h1>
+                <div class="box_ofertas">
+
+                    <div class="oferta_cards">
+                        <img class="picture" src="https://source.unsplash.com/300x400/?shirt" alt="">
+                            <div class="button">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <h2 class="title">adicionar</h2>
+                            </div>
+                        <h3>Camiseta</h3>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing</p>
+                        <span class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </span>
+                        <span class="valor">
+                            <h1 class="price">R$ 100,00</h1>
+                        </span>
+                    </div>        
+                    
+                    <div class="oferta_cards">
+                        <img class="picture" src="https://source.unsplash.com/300x400/?shirt" alt="">
+                            <div class="button">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <h2 class="title">adicionar</h2>
+                            </div>
+                        <h3>Camiseta</h3>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing</p>
+                        <span class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </span>
+                        <span class="valor">
+                            <h1 class="price">R$ 100,00</h1>
+                        </span>
+                    </div>  
+                
+                    <div class="oferta_cards">
+                        <img class="picture" src="https://source.unsplash.com/300x400/?shirt" alt="">
+                            <div class="button">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <h2 class="title">adicionar</h2>
+                            </div>
+                        <h3>Camiseta</h3>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing</p>
+                        <span class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </span>
+                        <span class="valor">
+                            <h1 class="price">R$ 100,00</h1>
+                        </span>
+                    </div> 
+
+                    <div class="oferta_cards">
+                        <img class="picture" src="https://source.unsplash.com/300x400/?shirt" alt="">
+                            <div class="button">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <h2 class="title">adicionar</h2>
+                            </div>
+                        <h3>Camiseta</h3>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing</p>
+                        <span class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </span>
+                        <span class="valor">
+                            <h1 class="price">R$ 100,00</h1>
+                        </span>
+                    </div>        
+                    
+                    <div class="oferta_cards">
+                        <img class="picture" src="https://source.unsplash.com/300x400/?shirt" alt="">
+                            <div class="button">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <h2 class="title">adicionar</h2>
+                            </div>
+                        <h3>Camisite</h3>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing</p>
+                        <span class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </span>
+                        <span class="valor">
+                            <h1 class="price">R$ 100,00</h1>
+                        </span>
+                    </div>  
+                
+                    <div class="oferta_cards">
+                        <img class="picture" src="https://source.unsplash.com/300x400/?shirt" alt="">
+                            <div class="button">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <h2 class="title">adicionar</h2>
+                            </div>
+                        <h3>Camiseta</h3>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing</p>
+                        <span class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </span>
+                        <span class="valor">
+                            <h1 class="price">R$ 100,00</h1>
+                        </span>
+                    </div> 
+
+                    <div class="oferta_cards">
+                        <img class="picture" src="https://source.unsplash.com/300x400/?shirt" alt="">
+                            <div class="button">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <h2 class="title">adicionar</h2>
+                            </div>
+                        <h3>Camiseta</h3>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing</p>
+                        <span class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </span>
+                        <span class="valor">
+                            <h1 class="price">R$ 100,00</h1>
+                        </span>
+                    </div>        
+                    
+                    <div class="oferta_cards">
+                        <img class="picture" src="https://source.unsplash.com/300x400/?shirt" alt="">
+                            <div class="button">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <h2 class="title">adicionar</h2>
+                            </div>
+                        <h3>Camiseta</h3>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing</p>
+                        <span class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </span>
+                        <span class="valor">
+                            <h1 class="price">R$ 100,00</h1>
+                        </span>
+                    </div>  
+                
+                    <div class="oferta_cards">
+                        <img class="picture" src="https://source.unsplash.com/300x400/?shirt" alt="">
+                            <div class="button">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <h2 class="title">adicionar</h2>
+                            </div>
+                        <h3>Camisite</h3>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing</p>
+                        <span class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </span>
+                        <span class="valor">
+                            <h1 class="price">R$ 100,00</h1>
+                        </span>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section id="Parana" class="parana">
+                <h1>Paraná</h1>
+                <div class="cards-parana">
+                    <div class="card_time1">
+                        <img class="time1" src="assets/images/Athletico.jpeg">
+                        <h3>Athletico</h3>  
+                    </div>
+
+                    <div class="card_time2">
+                        <img class="time2" src="assets/images/Coritiba2.jpeg">
+                        <h3>Coritiba</h3>  
+                    </div>
+                </div>
+            </section> 
+
+            <section id="Rio_Grande_do_Sul" class="rio_grande">
+                <h1>Rio Grande do Sul</h1>
+                <div class="cards-rio_grande">
+                    <div class="card_time1">
+                        <img class="time1" src="assets/images/Gremio 2023.png">
+                        <h3>Gremio</h3>  
+                    </div>
+
+                    <div class="card_time2">
+                        <img class="time2" src="assets/images/Internacional-Retro.png">
+                        <h3>Internacional</h3>  
+                    </div>
+                </div>
+            </section> 
+
+             <section id="SC" class="santa-catarina">
+                    <h1>Santa Catarina</h1>
+                <div class="cards-sc">
+                    <div class="card_time1">
+                        <img class="time1" src="assets/images/Avai 2023.png">
+                        <h3>Avai</h3>  
+                    </div>
+
+                    <div class="card_time2">
+                        <img class="time2" src="assets/images/Figueirense 2023.jfif">
+                            <h3>Figueirense</h3>  
+                    </div>
+                </div>
+            </section>
+
+            <!-- <div class="container" id="inicio">
+                <div class="card">
+                    <img class="gif greatsword" src="../Relicário/assets/images/c.png" alt="">
+                    <h2 class="title">Figueirense</h2>
+                    </a>
+                    <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia autem commodi eius. Consequatur iste autem sed adipisci at maxime, consequuntur reiciendis fugit? Aut quibusdam, corporis neque in impedit enim autem!</p>
+                </div>
+                <div class="card">
+                    <img class="gif long-sowrd" src="../Relicário/assets/images/c.png" alt="">
+                    <h2 class="title">Figueirense</h2>
+                    </a>
+                    <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia autem commodi eius. Consequatur iste autem sed adipisci at maxime, consequuntur reiciendis fugit? Aut quibusdam, corporis neque in impedit enim autem!</p>
+                </div>
+                <div class="card">
+                    <img class="gif" src="../Relicário/assets/images/c.png" alt="">
+                    <h2 class="title">Figueirense</h2>
+                    </a>
+                    <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia autem commodi eius. Consequatur iste autem sed adipisci at maxime, consequuntur reiciendis fugit? Aut quibusdam, corporis neque in impedit enim autem!</p>
+                </div>
+                <div class="card">
+                    <img class="gif" src="../Relicário/assets/images/c.png" alt="">
+                    <h2 class="title">Figueirense</h2>
+                    </a>
+                    <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia autem commodi eius. Consequatur iste autem sed adipisci at maxime, consequuntur reiciendis fugit? Aut quibusdam, corporis neque in impedit enim autem!</p>
+                </div>
+            </div> -->
+
+        </main>
+
+        <footer>Footer</footer>
+  
     
 </body>
 </html>

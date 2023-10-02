@@ -2,76 +2,331 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    scroll-behavior: smooth;
+    list-style: none;
     text-decoration: none;
+    font-family: sans-serif;
+    scroll-behavior: smooth; 
+}
+
+body{
+    gap: 10px;
+    display: grid;
+    height: 100vh;
+    padding-top:80px ;
+    grid-template-columns: 2.3fr 7.7fr;
+    grid-template-rows: 2fr 5fr 3fr;
+    grid-template-areas: 
+    "header header"
+    "aside main"
+    "footer footer"
+} 
+
+header{
+    grid-area: header;
     
 }
+
+.header{
+    position:fixed;
+    width: 100%;
+    height: 80px;
+    top: 0px;
+    background-color: black;
+}
+
+aside{
+    grid-area: aside;
+    margin-left: 10px;
+    background-color: red;
+}
+
+
+
+footer{
+    grid-area: footer;
+    background-color: blueviolet;
+}
+
 
 
 .logo{
     height: 50px;
 }
 
-.container{
-    
+main{
+    grid-area: main;
     padding: 30px;
-    display: flex;
     flex-wrap: wrap;
-    width: 1400px;
-    margin: 10px auto;
+    margin: 0px 10px auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     
 }
 
-.card{
+
+.button{
+    display: flex;
+    position: relative;
+    top: -30px;
+    width: 160px;
+    height: 40px;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 50px;
+    border: rgb(41, 98, 255);
     background-color: white;
-    width: 400px;
-    text-align: center;
-    padding-bottom: 20px;
+    box-shadow: 2px 2px 2px rgb(55, 93, 199);
+    border-radius: 5px;        
+}
+
+.button > h2{
+    display: flex;
+    align-self: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.button > i{
+    display: flex;
+    align-items: center;
+    color: rgb(41, 98, 255) ;
+}
+
+
+.title{
     display: inline-block;
-    margin:10px;
-    transition: .5s;
+    color:rgb(31, 129, 241);  
 }
 
 .description{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
     text-align: justify;
     padding: 0 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
 }
 
-.title{
-    position: relative;
-    top: -50px;
-    text-align: left;
-    padding-left: 20px;
-    background-color: rgba(0, 0, 0, 0.438);
-    color: white;
+
+.valor {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-left: 25px;
+    margin-top: 15px;
 }
 
-.title:hover{
-    background-color: rgba(216, 60, 60, 0.616);
-    transition: .5s;
+
+#ofertas{
+    display: flex;
+    flex-direction: column;
+    align-content: center;  
+    height: 1740px;
+     
 }
 
-.card:hover{
-    cursor: pointer;
-    transform: scale(1.1);
-}
-
-.gif, .sns, .dual{
-    width: 400px;
-    height: 400px;
-}
-
-.return{
-    height: 50px;
-    width: 50px;
-    background-color: rgb(160, 211, 20);
+#ofertas > h1{ 
     display: flex;
     justify-content: center;
-    align-items: center;
-    position: fixed;
-    bottom: 50px;
-    right: 10px;   
+    padding: 10px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-style: italic;
+    color: rgb(0, 16, 24);
+    
 }
+
+.box_ofertas{
+    display: flex;
+    align-self: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-bottom: 70px;
+    height: 1800px;
+    width: 1000px;
+    justify-content: space-around; 
+}
+
+.oferta_cards{
+    background-color: white;
+    width: 270px;
+    height: 500px;
+    text-align: center;
+    padding-bottom: 20px;
+    display: inline-block;
+    margin:20px 0px ;
+    border: 2px solid rgb(163, 158, 158);
+    }
+
+.oferta_cards > img{
+    width: 267px;
+    height: 300px;
+}
+
+.oferta_cards > h3{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 20px;
+    margin-top: -15px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+#Parana{
+    display: flex;
+    padding: 40px;
+    flex-direction: column;
+    align-content: center; 
+    height: 600px;
+     
+}
+
+#Parana > h1{ 
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-style: italic;
+    color: rgb(0, 16, 24);
+    
+}
+
+.cards-parana{
+    gap: 20px;
+    display: grid;
+    padding: 10px 10px 0px 10px;
+    grid-template-columns: 5fr 5fr;
+    grid-template-areas: 
+    "card_time1 card_time2"
+}
+
+.card_time1{
+    display: flex;
+    height: 400px;
+    flex-direction: column;
+    border: 1px solid gray;
+    grid-area:card_time1;
+    cursor: pointer; 
+}
+
+
+.time1{
+    width: 100%;
+    height: 100%;
+}
+
+
+.card_time1 >h3{
+    display: flex;
+    position: relative;
+    top: -50px;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 200;
+    color: white;
+    height: 60px;
+    opacity: 0.8;
+    background-color: black;
+}
+
+.card_time2 >h3{
+    display: flex;
+    position: relative;
+    top: -50px;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 200;
+    color: white;
+    height: 40px;
+    opacity: 0.8;
+    background-color: black;
+}
+
+.card_time2{
+    border: 1px solid gray;
+    height: 400px;
+    grid-area:card_time2;
+    cursor: pointer;
+}
+
+
+
+.time2{
+    width: 100%;
+    height: 100%;
+}
+
+#Rio_Grande_do_Sul{
+    display: flex;
+    padding: 40px;
+    flex-direction: column;
+    align-content: center;  
+    height: 600px;
+     
+}
+
+#Rio_Grande_do_Sul > h1{ 
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-style: italic;
+    color: rgb(0, 16, 24);
+    
+}
+
+.cards-rio_grande{
+    gap: 20px;
+    display: grid;
+    padding: 10px 10px 0px 10px;
+    grid-template-columns: 5fr 5fr;
+    grid-template-areas: 
+    "card_time1 card_time2"
+}
+
+#SC{
+    display: flex;
+    padding: 40px;
+    flex-direction: column;
+    align-content: center;  
+    height: 600px;
+     
+}
+
+#SC > h1{ 
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-style: italic;
+    color: rgb(0, 16, 24);
+    
+}
+
+.cards-sc{
+    gap: 20px;
+    display: grid;
+    padding: 10px 10px 0px 10px;
+    grid-template-columns: 5fr 5fr;
+    grid-template-areas: 
+    "card_time1 card_time2"
+}
+
+
 
 @media(max-width:1399px){
     .container{
