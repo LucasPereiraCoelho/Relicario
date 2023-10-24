@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    
+}
+
+
+.logo{
+    height: 50px;
+}
+
+.container{
+    
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 1400px;
+    margin: 10px auto;   
+}
+
+.img{
+    margin: 10px;
+    border: 1px solid black;
+}
+
+.product{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price{
+    margin: 30px;
+}
+
+.total{
+    position: relative;
+    left: 1350px;
+    
+}
